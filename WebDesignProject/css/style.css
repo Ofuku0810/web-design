@@ -1177,3 +1177,44 @@ button:hover{
 .hidden {
     display: none;
 }
+
+
+
+
+
+
+.shipping-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .shipping-content,
+    .shipping-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .shipping-form h3 {
+        font-size: 1.8rem;
+    }
+
+    .shipping-form .btn {
+        margin-top: 10px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shipping-content,
+    .shipping-form {
+        margin-bottom: 20px; /* Adjust spacing between the content and the form */
+    }
+}

@@ -456,37 +456,44 @@
 <!-- blogs section ends -->
 <!-- shipping section starts  -->
 <section class="shipping" id="shipping">
-
-    <h1 class="heading"> Shipping / Pick up <span>Options</span> </h1>
-
+    <h1 class="heading">Shipping / Pick up <span>Options</span></h1>
     <div class="row">
-        <!-- Your content for Shipping / Pick up Options goes here -->
-        <!-- You can include information about shipping methods, pick up locations, etc. -->
-
         <div class="shipping-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur est in pellentesque
-                vehicula.</p>
+            <p>Choose From Our Various Shipping And Pick-Up Options To Receive Your Favorite Teas.</p>
             <ul>
-                <li>Standard Shipping - $5.99</li>
-                <li>Express Shipping - $9.99</li>
-                <li>Local Pick up - Free</li>
+                <li><strong>Standard Shipping:</strong> $5.99</li>
+                <li><strong>Express Shipping:</strong> $9.99</li>
+                <li><strong>Local Pick Up:</strong> Free</li>
             </ul>
         </div>
-
+        <div class="shipping-content">
         <div class="shipping-form">
             <h3>Enter your address for shipping details:</h3>
-            <!-- Add a form for the user to enter their address -->
-            <form action="">
+            <!-- Modify the button to open the modal -->
+            <button onclick="openModal()" class="btn">Get Shipping Details</button>
+        </div>
+        <br>
+    <!-- Modal HTML -->
+    <div id="addressModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Enter Your Shipping Address</h2>
+            <form id="addressForm">
+                <!-- Input fields for address (e.g., street, city, etc.) -->
                 <div class="inputBox">
                     <span class="fas fa-map-marker"></span>
-                    <input type="text" placeholder="Enter your address">
+                    <input type="text" id="addressInput" placeholder="Enter your address" required>
                 </div>
-                <input type="submit" value="Get Shipping Details" class="btn">
+                <button type="button" onclick="submitAddress()" class="btn">Submit</button>
             </form>
         </div>
     </div>
+        </div>
+    </div>
+
 
 </section>
+
 <!-- shipping section ends  -->
 
 <!-- footer section starts  -->
